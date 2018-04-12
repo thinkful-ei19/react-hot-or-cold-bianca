@@ -9,7 +9,7 @@ export default function Header(props) {
     return (
         <header>
             <TopNav onRestartGame={()=> props.onRestartGame()}/>
-            {/* <Infomodal /> */}
+            {/* <Infomodal />  */}
             <h1>HOT or COLD</h1>
         </header>
     );

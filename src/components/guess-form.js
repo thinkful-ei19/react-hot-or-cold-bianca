@@ -15,11 +15,12 @@ export default function GuessForm(props) {
             event.target.userGuess.value=''
 
         }}>
-            <input type="text" 
+            <input type="number" 
             name="userGuess" 
             id="userGuess"
             className="text" 
-            maxLength="3" 
+            min="1"
+            max="100" 
             autoComplete="off"
             placeholder="Enter your Guess" 
             required />
