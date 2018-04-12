@@ -3,13 +3,14 @@ import React from 'react';
 import './guess-form.css';
 
 export default function GuessForm(props) {
+    
     return (
         <form onSubmit={(event) => {
             event.preventDefault()
-
+            
             let inputValue = event.target.userGuess.value
-
-            props.add(inputValue)
+            
+            props.addToList(inputValue)
 
             event.target.userGuess.value=''
 

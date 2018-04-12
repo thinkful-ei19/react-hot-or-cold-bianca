@@ -1,15 +1,15 @@
 import React from 'react';
 
 import TopNav from './top-nav';
-import InfoModal from './info-modal';
+// import Infomodal from './info-modal';
 
 import './header.css';
 
 export default function Header(props) {
     return (
         <header>
-            <TopNav />
-            {/* <InfoModal /> */}
+            <TopNav onRestartGame={()=> props.onRestartGame()}/>
+            {/* <Infomodal /> */}
             <h1>HOT or COLD</h1>
         </header>
     );
